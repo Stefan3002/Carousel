@@ -1,0 +1,33 @@
+$Header: 'Sansita Swashed', cursive
+$Body: 'Oswald', sans-serif
+
+h1
+  font-family: $Header
+body
+  text-align: center
+  font-family: $Body
+.content
+  width: 100%
+  overflow: hidden
+  img
+    width: 40%
+    border-radius: 10px
+
+.active
+  animation-name: SlideLeft
+  animation-duration: 2s
+.inactive
+  animation-name: SlideLeft2
+  animation-duration: 1s
+
+@keyframes SlideLeft
+  from
+    transform: translateX(500%)
+  to
+    transform: translateX(0)
+
+@keyframes SlideLeft2
+  from
+    transform: translateX(0%)
+  to
+    transform: translateX(-500%)

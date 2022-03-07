@@ -1,0 +1,46 @@
+h1 {
+  font-family: "Sansita Swashed", cursive;
+}
+
+body {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+.content img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.active {
+  animation-name: SlideLeft;
+  animation-duration: 2s;
+}
+
+.inactive {
+  animation-name: SlideLeft2;
+  animation-duration: 1s;
+}
+
+@keyframes SlideLeft {
+  from {
+    transform: translateX(500%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes SlideLeft2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-500%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
